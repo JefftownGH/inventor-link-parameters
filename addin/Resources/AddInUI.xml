@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Ribbon>
+  <RibbonTab internalName="id_TabManage" displayName="Manage" ribbons="Assembly" targetTab="id_TabTools" insertBefore="false">
+    <RibbonPanel internalName="iLogic.RibbonPanel" displayName="iLogic">
+      <Button internalName="coolOrange.linkParametersAddin.LinkParametersCmd" useLargeIcon="false" isInSlideout="true" targetControl="iLogic.RegenAllRules" insertBefore="true"/>
+    </RibbonPanel>
+  </RibbonTab>
+  <RibbonTab internalName="id_TabCoolOrange" displayName="coolOrange" ribbons="Assembly" targetTab="" insertBefore="false">
+    <RibbonPanel internalName="coolOrange.linkParametersAddin.AsmPanel" displayName="linkParameters">
+      <Button internalName="coolOrange.linkParametersAddin.LinkParametersCmd" useLargeIcon="true" isInSlideout="false" targetControl="" insertBefore="false"/>
+      <Button internalName="coolOrange.linkParametersAddin.HelpControlCommand"
+               useLargeIcon="false"
+               isInSlideout="true"
+               targetControl=""
+               insertBefore="false"/>
+      <Button internalName="coolOrange.linkParametersAddin.AboutCtrlCmd"
+               useLargeIcon="false"
+               isInSlideout="true"
+               targetControl=""
+               insertBefore="false"/>
+    </RibbonPanel>
+  </RibbonTab>
+</Ribbon>

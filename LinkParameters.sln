@@ -1,0 +1,72 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.705
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkParameters", "addin\LinkParameters.csproj", "{694A5870-EF34-4BFB-8B25-90E8EAB97A97}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{ECBA48DE-F643-4AAF-88FA-D066EF6BD554}"
+	ProjectSection(SolutionItems) = preProject
+		ProductInfo.cs = ProductInfo.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Setup", "Setup", "{4F119DDF-F1B1-44CB-8C1E-7E0DF3FB8AD8}"
+EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "LinkParametersWixSetup", "Setup\LinkParametersWixSetup\LinkParametersWixSetup.wixproj", "{7E320651-B79A-423F-90C4-953205999D89}"
+	ProjectSection(ProjectDependencies) = postProject
+		{694A5870-EF34-4BFB-8B25-90E8EAB97A97} = {694A5870-EF34-4BFB-8B25-90E8EAB97A97}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+		Setup|Any CPU = Setup|Any CPU
+		Setup|Mixed Platforms = Setup|Mixed Platforms
+		Setup|x86 = Setup|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{694A5870-EF34-4BFB-8B25-90E8EAB97A97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{694A5870-EF34-4BFB-8B25-90E8EAB97A97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{694A5870-EF34-4BFB-8B25-90E8EAB97A97}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{694A5870-EF34-4BFB-8B25-90E8EAB97A97}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{694A5870-EF34-4BFB-8B25-90E8EAB97A97}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{694A5870-EF34-4BFB-8B25-90E8EAB97A97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{694A5870-EF34-4BFB-8B25-90E8EAB97A97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{694A5870-EF34-4BFB-8B25-90E8EAB97A97}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{694A5870-EF34-4BFB-8B25-90E8EAB97A97}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{694A5870-EF34-4BFB-8B25-90E8EAB97A97}.Release|x86.ActiveCfg = Release|Any CPU
+		{694A5870-EF34-4BFB-8B25-90E8EAB97A97}.Setup|Any CPU.ActiveCfg = Release|Any CPU
+		{694A5870-EF34-4BFB-8B25-90E8EAB97A97}.Setup|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{694A5870-EF34-4BFB-8B25-90E8EAB97A97}.Setup|x86.ActiveCfg = Release|Any CPU
+		{7E320651-B79A-423F-90C4-953205999D89}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{7E320651-B79A-423F-90C4-953205999D89}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{7E320651-B79A-423F-90C4-953205999D89}.Debug|x86.ActiveCfg = Debug|x86
+		{7E320651-B79A-423F-90C4-953205999D89}.Release|Any CPU.ActiveCfg = Release|x86
+		{7E320651-B79A-423F-90C4-953205999D89}.Release|Mixed Platforms.ActiveCfg = Setup|x86
+		{7E320651-B79A-423F-90C4-953205999D89}.Release|x86.ActiveCfg = Release|x86
+		{7E320651-B79A-423F-90C4-953205999D89}.Setup|Any CPU.ActiveCfg = Setup|x86
+		{7E320651-B79A-423F-90C4-953205999D89}.Setup|Any CPU.Build.0 = Setup|x86
+		{7E320651-B79A-423F-90C4-953205999D89}.Setup|Mixed Platforms.ActiveCfg = Setup|x86
+		{7E320651-B79A-423F-90C4-953205999D89}.Setup|Mixed Platforms.Build.0 = Setup|x86
+		{7E320651-B79A-423F-90C4-953205999D89}.Setup|x86.ActiveCfg = Setup|x86
+		{7E320651-B79A-423F-90C4-953205999D89}.Setup|x86.Build.0 = Setup|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7E320651-B79A-423F-90C4-953205999D89} = {4F119DDF-F1B1-44CB-8C1E-7E0DF3FB8AD8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3886587F-B097-4676-829C-5D67191C8D1C}
+	EndGlobalSection
+EndGlobal

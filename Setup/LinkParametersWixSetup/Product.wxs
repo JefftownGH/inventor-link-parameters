@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Product Id="*" Name="coolOrange Inventor LinkParameters" Language="1033" Version="$(var.PVersion)" Manufacturer="coolOrange s.r.l" UpgradeCode="FB22E24C-9735-492A-A9F2-00B10FE96783">
+		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+
+		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+    <Media Id="1" Cabinet='PointLinker.cab' EmbedCab='yes'/>
+
+		<Feature Id="ProductFeature" Title="LinkParametersWixSetup" Level="1">
+      <ComponentGroupRef Id="LINKPARAMETERS_OUTPUT" />
+    </Feature>
+    <UIRef Id="WixUI_Minimal" />
+    <UIRef Id="WixUI_ErrorProgressText" />
+  </Product>
+
+  <Fragment>
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="CommonAppDataFolder"
+                 Name="ProgramData">
+        <Directory Id='AutoDesk'
+                   Name='Autodesk'>
+          <Directory Id='AppPlugins' Name='ApplicationPlugins'>
+            <Directory Id="INSTALLFOLDER" Name="cODTlinkParameters.bundle" />
+          </Directory>
+        </Directory>
+      </Directory>
+    </Directory>
+  </Fragment>
+</Wix>

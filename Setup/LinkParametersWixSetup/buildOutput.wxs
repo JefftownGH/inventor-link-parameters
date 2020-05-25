@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+        <DirectoryRef Id="INSTALLFOLDER">
+            <Component Id="cmp17F317F3B29DC444A1747D8270D1742C" Guid="*">
+                <File Id="fil203B1145C39613A695DA5653C74DA7A0" KeyPath="yes" Source="$(var.OutputHarvestPath)\PackageContents.xml" />
+            </Component>
+            <Directory Id="dir97876F8F53187814DA9C036CB67DE3B6" Name="Contents">
+                <Component Id="cmp09FB075B619A352D6E099D4B1816EF90" Guid="*">
+                    <File Id="filB9F9E5139E8CB376E902D654206215DA" KeyPath="yes" Source="$(var.OutputHarvestPath)\Contents\Autodesk.Inventor.Interop.dll" />
+                </Component>
+                <Component Id="cmp13A59EFBFC6FD18E755A1A8A92F35DF6" Guid="*">
+                    <File Id="fil81DE689B95F20797317CE46845C4A301" KeyPath="yes" Source="$(var.OutputHarvestPath)\Contents\coolOrange.LinkParameters.Inventor.addin" />
+                </Component>
+                <Component Id="cmpEDF91348E9995C07537984333434DA84" Guid="*">
+                    <File Id="fil0187C740A3929DB4BF72836DDED30A70" KeyPath="yes" Source="$(var.OutputHarvestPath)\Contents\LinkParameters.dll" />
+                </Component>
+                <Component Id="cmp46DFE7A83B511BEF535E3811CCFE47CF" Guid="*">
+                    <File Id="filEA9A8E5F724DEB971A6D2AD0EB0D55AB" KeyPath="yes" Source="$(var.OutputHarvestPath)\Contents\LinkParameters.dll.log4net" />
+                </Component>
+                <Component Id="cmpE55AE287F3CB154D811353507EE96D51" Guid="*">
+                    <File Id="filC8EDA11CBC2004603F2AB5C5088DAFAD" KeyPath="yes" Source="$(var.OutputHarvestPath)\Contents\log4net.dll" />
+                </Component>
+                <Component Id="cmpBE6D8A2871DECB605E538679CC720839" Guid="*">
+                    <File Id="filC40AE468FAED5B98550EECAF4A99D1B0" KeyPath="yes" Source="$(var.OutputHarvestPath)\Contents\stdole.dll" />
+                </Component>
+            </Directory>
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <ComponentGroup Id="LINKPARAMETERS_OUTPUT">
+            <ComponentRef Id="cmp17F317F3B29DC444A1747D8270D1742C" />
+            <ComponentRef Id="cmp09FB075B619A352D6E099D4B1816EF90" />
+            <ComponentRef Id="cmp13A59EFBFC6FD18E755A1A8A92F35DF6" />
+            <ComponentRef Id="cmpEDF91348E9995C07537984333434DA84" />
+            <ComponentRef Id="cmp46DFE7A83B511BEF535E3811CCFE47CF" />
+            <ComponentRef Id="cmpE55AE287F3CB154D811353507EE96D51" />
+            <ComponentRef Id="cmpBE6D8A2871DECB605E538679CC720839" />
+        </ComponentGroup>
+    </Fragment>
+</Wix>

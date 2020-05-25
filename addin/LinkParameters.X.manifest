@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+
+  <assemblyIdentity name="LinkParameters" version="1.0.0.0"></assemblyIdentity>
+
+  <clrClass clsid="{6BCB4DC2-A2CE-4135-9818-B28A0863EB5B}" 
+		progid="LinkParameters.StandardAddInServer" 
+		threadingModel="Both" 
+		name="LinkParameters.StandardAddInServer" 
+		runtimeVersion=""></clrClass>
+
+  <file name="LinkParameters.dll" hashalg="SHA1"></file>
+
+</assembly>
